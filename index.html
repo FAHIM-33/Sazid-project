@@ -9,64 +9,64 @@
 
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <!-- backdrop-blur-sm -->
 
 <body>
   <header>
-    <nav class="flex justify-between items-center px-24 py-3 border-b border-b-gray-600"> <!-- This is the logo part -->
+    <nav class="flex justify-between items-center px-4 lg:px-24 py-3 border-b border-b-gray-600">
+      <!-- This is the logo part -->
       <div class="flex items-center gap-2">
-        <img class="w-16 rounded-full" src="./img/logospng.png" alt="">
-        <p class="text-lg font-bold">Visage <br>Technologies</p>
+        <img class="w-8 lg:w-16 rounded-full" src="./img/logospng.png" alt="">
+        <p class="text-sm lg:text-lg font-bold">Visage <br>Technologies</p>
+      </div>
+
+      <div class="hidden lg:block">
+        <h1 class="text-xl lg:text-4xl font-medium py-2">Smart Face Recongnition</h1>
       </div>
 
       <div>
-        <h1 class="text-4xl font-medium p-2 rounded-xl">Smart Face Recongnition</h1>
-      </div>
-
-      <div>
-        <button title="Go to About us" class="grey text-xl contact px-4 py-2 rounded-sm"><a href="">Contact</a></button>
+        <button title="Go to About us" class="grey text-base lg:text-xl contact px-4 py-2 rounded-sm font-semibold"><a
+            href="#how">Contact</a></button>
       </div>
     </nav>
 
-    <section class="flex justify-end px-24 pb-32 mt-12 2xl:pt-24 relative z-10">
+    <section class="flex justify-end px-4 lg:px-24 pb-32 mt-12 2xl:pt-24 relative z-10">
       <div class="w-fit">
-        <h2 class="text-5xl font-semibold ">Face Analysis</h2>
-        <p class="text-3xl my-7">Detect detailed data for peoples gender, age and<br>emotions and build engaging
+        <h2 class="text-4xl lg:text-5xl font-semibold ">Face Analysis</h2>
+        <p class="text-base lg:text-3xl my-7">Detect detailed data for peoples gender, age and<br>emotions and build
+          engaging
           experiences</p>
-        <button class="bg-green-700 py-4 px-8 rounded-md font-bold ">Age & Gender Detection</button>
+        <button class="bg-green-500 py-3 lg:py-4 px-4 lg:px-8 rounded-md font-bold ">Age & Gender Detection</button>
       </div>
-      <div class="w-2/5">
+      <div class="lg:w-2/5">
       </div>
     </section>
-    <div class="h-full pera">
+    <div class="h-full pera flex">
+      <!-- VODAR BACCHA EITA EMPTY DIV HOILEO KHOBORDAR REMOVE KORBI NA. Ekkere mairalamu -->
+      <div class="red">
+      </div>
+      <div class="yellow">
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="card-section py-24">
+    <section class="card-section py-12 lg:py-24">
       <div class="cont">
-        <p class="font-bold text-blue-700">Age, gender & emotion recognition</p>
-        <h2 class=" text-4xl font-bold">Understand human<br> faces with emotion AI</h2>
-        <section class="card-container grid grid-cols-3 gap-8 mt-12">
-<!-- Each cards---------------------------------- -->
+        <div class="px-4 lg:px-0">
+          <p class="text-sm font-bold text-blue-700">Age, gender & emotion recognition</p>
+          <h2 class="text-3xl lg:text-4xl font-bold">Understand human<br> faces with emotion AI</h2>
+        </div>
+        <section class="card-container p-4 lg:p-0 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8 lg:mt-12">
+          <!-- Each cards---------------------------------- -->
           <div class="card p-8 rounded-lg">
             <figure>
               <img class="w-16 rounded-full mx-auto" src="./img/logospng.png" alt="">
             </figure>
             <h3 class="font-bold text-xl py-4">Lightweight & fast</h3>
-            <p class="text-lg text-gray-400">Low data size and memory usage ensure fast but yet accurate gender, age and emotion estimation in milliseconds (view references).</p>
+            <p class="text-lg text-gray-400">Low data size and memory usage ensure fast but yet accurate gender, age and
+              emotion estimation in milliseconds (view references).</p>
           </div>
 
           <div class="card p-8 rounded-lg">
@@ -82,7 +82,8 @@
               <img class="w-16 rounded-full mx-auto" src="./img/logospng.png" alt="">
             </figure>
             <h3 class="font-bold text-xl py-4">Privacy-assured</h3>
-            <p class="text-lg text-gray-400">No personal data such as photos or names is stored or processed by default, ensuring privacy.</p>
+            <p class="text-lg text-gray-400">No personal data such as photos or names is stored or processed by default,
+              ensuring privacy.</p>
           </div>
           <div>
 
@@ -93,42 +94,47 @@
               <img class="w-16 rounded-full mx-auto" src="./img/logospng.png" alt="">
             </figure>
             <h3 class="font-bold text-xl py-4">Easy to integrate</h3>
-            <p class="text-lg text-gray-400">Integration is a breeze with the detailed guides and samples we've compiled during 10+ years of development and research.</p>
+            <p class="text-lg text-gray-400">Integration is a breeze with the detailed guides and samples we've compiled
+              during 10+ years of development and research.</p>
           </div>
 
         </section>
       </div>
     </section>
-<!-- ------------------------GEH Estimation----------------------- -->
+    <!-- ------------------------GEH Estimation----------------------- -->
     <article class="text-black">
 
-      <div class="cont flex gap-6 py-16">
-        <div class="w-1/2">
-          <h3 class="text-4xl font-bold mb-8">Gender estimation</h3>
-          <p class="text-lg leading-8 mb-8">There are certain common features in human faces that distinguish male faces from female ones. FaceAnalysis uses advanced machine learning techniques to provide you with <strong>gender detection</strong>.</p>
+      <div class="cont flex flex-col lg:flex-row-reverse gap-6 lg:gap-12 py-8 lg:py-16">
+        <div class="w-full lg:w-1/2 p-4 lg:p-0">
+          <h3 class="text-3xl lg:text-4xl font-bold mb-8">Gender estimation</h3>
+          <p class="text-lg leading-8 mb-8">There are certain common features in human faces that distinguish male faces
+            from female ones. FaceAnalysis uses advanced machine learning techniques to provide you with <strong>gender
+              detection</strong>.</p>
           <ul class="list-disc pl-4 mb-8">
             <li class="mb-2">Estimate whether a person is female or male in real time</li>
             <li>Use gender estimation to target your products, content or ads to specific gender</li>
           </ul>
           <button class="bg-green-700 p-4 text-white font-bold ">Learm more</button>
         </div>
-        <figure class="w-1/2">
+        <figure class="w-full lg:w-1/2">
           <img class="w-full" src="./img/our-service.jpg" alt="">
         </figure>
       </div>
 
 
-      <div class="cont flex flex-row-reverse gap-12 py-16">
-        <div class="w-1/2 ">
-          <h3 class="text-4xl font-bold mb-8">Age estimation</h3>
-          <p class="text-lg leading-8 mb-8">Landmarks such as the location of the pupils, eye corners, lip boundaries, etc. change with age. Our algorithm was trained on a large database of different faces to detect the approximate age of a person based on such features.</p>
+      <div class="cont flex flex-col lg:flex-row-reverse gap-6 lg:gap-12 py-8 lg:py-16">
+        <div class="lg:w-1/2 p-4 lg:p-0">
+          <h3 class="text-3xl lg:text-4xl font-bold mb-8">Age estimation</h3>
+          <p class="text-lg leading-8 mb-8">Landmarks such as the location of the pupils, eye corners, lip boundaries,
+            etc. change with age. Our algorithm was trained on a large database of different faces to detect the
+            approximate age of a person based on such features.</p>
           <ul class="list-disc pl-4 mb-8">
             <li class="mb-2">Age estimation accuracy up to +/- 5 years</li>
             <li>Accuracy depends on conditions such as lighting, head pose, etc.</li>
           </ul>
           <button class="bg-green-700 p-4 text-white font-bold ">Learm more</button>
         </div>
-        <figure class="w-1/2">
+        <figure class="lg:w-1/2">
           <img class="w-full" src="./img/our-service.jpg" alt="">
         </figure>
       </div>
@@ -136,18 +142,19 @@
       </div>
     </article>
 
-    <section class="how-the-fff text-center">
-      <div class="cont py-24">
-        <h2 class="text-5xl font-bold mb-8">How it works</h2>
-        <p>FaceAnalysis detects faces in images or video and then uses face tracking and action units to accurately provide gender, emotions and age for the faces in roughly frontal position.</p>
-        <p class="my-8">This allows you to track and respond to human behavior in real time, build engaging customer experiences and gain deeper insights into the effect of various stimuli on emotions.</p>
+    <section id="how" class="how-the-fff text-center">
+      <div class="cont py-8 px-2 lg:py-24">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-8">How it works</h2>
+        <p>FaceAnalysis detects faces in images or video and then uses face tracking and action units to accurately
+          provide gender, emotions and age for the faces in roughly frontal position.</p>
+        <p class="my-8">This allows you to track and respond to human behavior in real time, build engaging customer
+          experiences and gain deeper insights into the effect of various stimuli on emotions.</p>
         <button class="bg-green-700 p-4 font-bold">Explore complemantery tecnologies</button>
-    </div>
+      </div>
     </section>
   </main>
-  <footer>
 
-  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
