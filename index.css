@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    /* font-family: sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+}
+
+header {
+    background-image: url('./img/banner2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    position: relative;
+    z-index: 100;
+}
+
+.contact{
+    transition: all 0.5s;
+}
+.contact:hover{
+    background-color: rgb(76, 150, 61);
+    text-decoration: underline;
+    
+}
+button{
+    transition: all 0.5s;
+    border-radius: 6px;
+}
+button:hover{
+    background-color: rgb(23, 90, 23);
+}
+.pera{
+    transform: skew(-30deg);
+    background: rgba(206, 0, 0, 0.438);
+    position:absolute;
+    transition: left 1s;
+    left: 20%;
+    top: 0;
+    width: 35%;
+}
+
+.card-section{
+    /* background-color: rgb(31, 31, 31); */
+    background-color: #1b1525;
+    background-image: url('./img/background.png');
+}
+.cont{
+    max-width: 1180px;
+    margin: 0 auto;
+    
+}
+.card-container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    text-align: center;
+    border: 1px solid rgb(63, 63, 63);
+    /* width: 30%; */
+    height: fit-content;
+    transition: all 0.4s;
+    background-color: #1b1525;
+}
+.card:hover{
+    background-color: white;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    scale: 1.02;
+    border: none;
+    
+}
+.card:hover h3{
+    color: black;
+}
+.card:hover p{
+    color: rgb(83, 83, 83);
+}
+.how-the-fff{
+    /* background-color: rgba(0, 153, 255, 0.411); */
+    background: linear-gradient(90deg,rgba(30, 177, 182, 0.568),rgba(0, 47, 255, 0.863),rgba(6, 157, 245, 0.664)),url('./img/aboutUs.jpg');
+}
+
+.brr{
+    border: 1px solid red;
+}
+.brb{
+    border: 1px solid blue;
+}
