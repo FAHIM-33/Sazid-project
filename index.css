@@ -12,6 +12,7 @@ body {
 
 header {
     position: relative;
+    overflow: hidden;
 }
 
 header::before {
@@ -140,6 +141,8 @@ button:hover {
     background: linear-gradient(90deg, rgba(30, 177, 182, 0.568), rgba(0, 47, 255, 0.863), rgba(6, 157, 245, 0.664)), url('./img/aboutUs.jpg');
 }
 
+
+/* just for layout testing  */
 .brr {
     border: 1px solid red;
 }
@@ -149,9 +152,9 @@ button:hover {
 }
 
 @media (max-width: 767px) {
-    header::before {
+    /* header::before {
     animation: none;
-    }
+    } */
     .pera {
         transform: skew(-25deg);
         width: 35%;
