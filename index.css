@@ -64,7 +64,12 @@ button {
 button:hover {
     background-color: rgb(23, 90, 23);
 }
-
+form input{
+    padding: 1rem;
+    width: 70%;
+    outline: 3px solid white;
+    border-radius: 8px;
+}
 .pera {
     transform: skew(-30deg);
     /* background: rgba(206, 0, 0, 0); */
@@ -139,6 +144,13 @@ button:hover {
 .how-the-fff {
     /* background-color: rgba(0, 153, 255, 0.411); */
     background: linear-gradient(90deg, rgba(30, 177, 182, 0.568), rgba(0, 47, 255, 0.863), rgba(6, 157, 245, 0.664)), url('./img/aboutUs.jpg');
+}
+
+input:focus,input:active{
+    outline: 3px solid rgb(58, 145, 245);
+}
+span img{
+    width: 2rem;
 }
 
 
